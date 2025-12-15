@@ -19,7 +19,6 @@
 
     <section class="book-showcase">
         <div class="container">
-            <h2>Featured Successes:Titles Represented</h2>
         </div>
         
         <div class="overflow-container">
@@ -27,27 +26,30 @@
                 
                 <div class="book-gallery-set set-1">
                     <script>
-                        // Dynamically generate 20 image tags for Set 1
-                        const totalBooks = 20; 
-                        let html1 = '';
-                        for (let i = 1; i <= totalBooks; i++) {
-                            // Ensure your images are named book-1.jpg up to book-20.jpg
-                            html1 += `<img src="book-${i}.jpg" alt="Book Cover ${i}">`;
-                        }
-                        document.write(html1);
-                    </script>
+    const totalBooks = 10; 
+    let html1 = '';
+    for (let i = 1; i <= totalBooks; i++) {
+        // Logic to add a leading zero (e.g., 1 becomes 01)
+        const paddedIndex = i < 10 ? '0' + i : i;
+        // Now using the correct .png extension and padded index
+        html1 += `<img src="book-${paddedIndex}.png" alt="Book Cover ${i}">`;
+    }
+    document.write(html1);
+</script>
                 </div>
                 
                 <div class="book-gallery-set set-2">
                     <script>
-                        // Dynamically generate the same 20 image tags for Set 2
-                        const totalBooks2 = 20;
-                        let html2 = '';
-                        for (let i = 1; i <= totalBooks2; i++) {
-                            html2 += `<img src="book-${i}.jpg" alt="Book Cover ${i}">`;
-                        }
-                        document.write(html2);
-                    </script>
+    const totalBooks = 10; 
+    let html1 = '';
+    for (let i = 1; i <= totalBooks; i++) {
+        // Logic to add a leading zero (e.g., 1 becomes 01)
+        const paddedIndex = i < 10 ? '0' + i : i;
+        // Now using the correct .png extension and padded index
+        html1 += `<img src="book-${paddedIndex}.png" alt="Book Cover ${i}">`;
+    }
+    document.write(html1);
+</script>
                 </div>
                 
             </div>
@@ -117,4 +119,5 @@
     </footer>
 
 </body>
+
 </html>
