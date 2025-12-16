@@ -254,18 +254,3 @@ footer {
         height: 300px;
     }
 }
-
-
-/* ========================================================== */
-/* NEW CUSTOM STYLES (Center Alignment)             */
-/* ========================================================== */
-
-/* Center-align all text within the Mission/Vision section (and any other .section) */
-.section {
-    text-align: center;
-}
-
-/* Ensure the footer content remains left-aligned, overriding the above rule */
-footer .section {
-    text-align: left;
-}
